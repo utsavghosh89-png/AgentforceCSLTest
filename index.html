@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        /* Basic CSS for the replication */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Top right navigation links - simplified */
+        .header {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: rgba(0,0,0,.87);
+            margin-right: 15px;
+            font-size: 13px;
+        }
+
+        .header button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        /* Main content styling */
+        .main-content {
+            margin-top: -100px; /* Adjust vertical centering */
+        }
+
+        /* Google Logo (simplified) */
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .logo span {
+            font-weight: bold;
+        }
+
+        /* Google color letters - approximate */
+        .l1 { color: #4285F4; } /* Blue */
+        .l2 { color: #EA4335; } /* Red */
+        .l3 { color: #F9BC05; } /* Yellow */
+        .l4 { color: #4285F4; } /* Blue */
+        .l5 { color: #34A853; } /* Green */
+        .l6 { color: #EA4335; } /* Red */
+
+
+        /* Search bar styling */
+        .search-container {
+            width: 580px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px 30px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            box-shadow: none;
+            outline: none;
+            font-size: 16px;
+            box-sizing: border-box; /* Include padding/border in element's total width/height */
+        }
+
+        .search-input:hover, .search-input:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        /* Buttons styling */
+        .buttons-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f1f1f1;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a href="#"></a> <button>Sign in</button>
+    </div>
+
+    <div class="main-content">
+        <div class="logo">
+            <span class="l1">G</span><span class="l2">o</span><span class="l3">o</span><span class="l4">g</span><span class="l5">l</span><span class="l6">e</span>
+        </div>
+
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL" autofocus>
+            </form>
+        </div>
+
+        <div class="buttons-container">
+            <input type="submit" class="button" value="Google Search" form="search-form">
+            <input type="submit" class="button" value="I'm Feeling Lucky" form="search-form">
+        </div>
+    </div>
+    
+</body>
+</html>
