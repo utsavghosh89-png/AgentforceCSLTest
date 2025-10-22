@@ -138,23 +138,23 @@
     </div>
 	<iframe
         width="400" height="600"
-        sandbox="allow-scripts allow-same-origin" srcdoc = "<body>
+        sandbox="allow-scripts allow-same-origin" srcdoc = '<body>
   <div id="chat-container"></div>
-	<script type='text/javascript'>
+	<script type="text/javascript">
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = "en_US";
 
 			embeddedservice_bootstrap.init(
-				'00DO3000008jHeP',
-				'Agentforce_Service_Agent_Web_Messaging_Channel',
-				'https://cslplasma--csldev2.sandbox.my.site.com/ESWAgentforceServiceAge1759719128560',
+				"00DO3000008jHeP",
+				"Agentforce_Service_Agent_Web_Messaging_Channel",
+				"https://cslplasma--csldev2.sandbox.my.site.com/ESWAgentforceServiceAge1759719128560",
 				{
-					scrt2URL: 'https://cslplasma--csldev2.sandbox.my.salesforce-scrt.com'
+					scrt2URL: "https://cslplasma--csldev2.sandbox.my.salesforce-scrt.com"
 				}
 			);
 		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
+			console.error("Error loading Embedded Messaging: ", err);
 		}
 	};
 
@@ -165,9 +165,9 @@
         });
     });
 </script>
-<script type='text/javascript' src='https://cslplasma--csldev2.sandbox.my.site.com/ESWAgentforceServiceAge1759719128560/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type="text/javascript" src="https://cslplasma--csldev2.sandbox.my.site.com/ESWAgentforceServiceAge1759719128560/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
 
-  </body>" >
+  </body>' >
 </iframe>
 </body>
 </html>
