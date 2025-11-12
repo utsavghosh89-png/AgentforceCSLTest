@@ -23,7 +23,12 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-
+window.addEventListener("onEmbeddedMessagingReady", e => {
+        console.log("onEmbeddedMessagingReady event triggered");              
+        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+            "Country" : "USA"
+        });
+    });
 		
 </script>
 <script type='text/javascript' src='https://cslplasma--csldev2.sandbox.my.site.com/ESWDevAgentChannel1761315580797/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
