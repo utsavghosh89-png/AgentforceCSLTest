@@ -13,8 +13,8 @@
 
 			embeddedservice_bootstrap.init(
 				'00DO3000008jHeP',
-				'CSL_Plasma_AI_Assistance_Channel',
-				'https://cslplasma--csldev2.sandbox.my.site.com/ESWCSLPlasmaAIAssistan1762173248122',
+				'Dev_Agent_Channel',
+				'https://cslplasma--csldev2.sandbox.my.site.com/ESWDevAgentChannel1761315580797',
 				{
 					scrt2URL: 'https://cslplasma--csldev2.sandbox.my.salesforce-scrt.com'
 				}
@@ -23,15 +23,14 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-
-		window.addEventListener("onEmbeddedMessagingReady", e => {
+window.addEventListener("onEmbeddedMessagingReady", e => {
         console.log("onEmbeddedMessagingReady event triggered");              
         embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-            "Country" : "Puerto Rico",
-			"Language" : "es"
+            "Country" : "Puerto Rico"
         });
     });
+		
 </script>
-<script type='text/javascript' src='https://cslplasma--csldev2.sandbox.my.site.com/ESWCSLPlasmaAIAssistan1762173248122/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://cslplasma--csldev2.sandbox.my.site.com/ESWDevAgentChannel1761315580797/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
