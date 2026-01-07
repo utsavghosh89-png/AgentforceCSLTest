@@ -7,31 +7,24 @@
   <h1> US Support Page </h1>
   <div id="chat-container"></div>
 	<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+  function initEmbeddedMessaging() {
+    try {
+      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00DO3000008jHeP',
-				'Dev_Agent_Channel',
-				'https://cslplasma--csldev2.sandbox.my.site.com/ESWDevAgentChannel1761315580797',
-				{
-					scrt2URL: 'https://cslplasma--csldev2.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-window.addEventListener("onEmbeddedMessagingReady", e => {
-        console.log("onEmbeddedMessagingReady event triggered");              
-        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-            "Country" : "USA",
-			"Language" : "en_US"
-        });
-    });
-		
+      embeddedservice_bootstrap.init(
+        '00DOy000007KYPr',
+        'CSL_Plasma_AI_Assistance_Channel',
+        'https://cslplasma--cslsit.sandbox.my.site.com/ESWCSLPlasmaAIAssistan1765633839310',
+        {
+          scrt2URL: 'https://cslplasma--cslsit.sandbox.my.salesforce-scrt.com'
+        }
+      );
+    } catch (err) {
+      console.error('Error loading Embedded Messaging: ', err);
+    }
+  };
 </script>
-<script type='text/javascript' src='https://cslplasma--csldev2.sandbox.my.site.com/ESWDevAgentChannel1761315580797/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://cslplasma--cslsit.sandbox.my.site.com/ESWCSLPlasmaAIAssistan1765633839310/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+ 
 </body>
 </html>
